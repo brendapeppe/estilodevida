@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    background-color: #addaff;
+}
+
+header {
+    background-color: #001f4d;
+    color: #adceff;
+    text-align: center;
+    /* padding: 55px; */
+   padding-top: 10px;
+
+}
+
+header h1 {
+    font-size: 65px;
+    font-family: "Comfortaa", sans-serif;
+    margin-top: 50px;
+}
+
+header p{
+    font-size: 18px;
+    padding-bottom: 8px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 25px;
+}
+
+.box {
+    background-color: #80b4d1;
+    width: 50%;
+    margin: 10px;
+    text-align: justify;
+    padding: 15px;
+    border-radius: 10px;
+
+}
+
+.box h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    margin-bottom: 30px;
+    color: #001f4d;
+}
+
+.box p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+
+.box ::selection {
+    background-color: black;
+    color: aliceblue;
+}
+
+.footer {
+    background-color: #001f4d;
+    color: #adceff;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.parallax1 {
+    background-image: url(https://cdn.pixabay.com/photo/2017/04/22/10/15/woman-2250970_640.jpg);
+}
+
+.parallax2 {
+    background-image: url(https://cdn.pixabay.com/photo/2016/03/27/23/00/weight-lifting-1284616_640.jpg);
+}
+
+.parallax3 {
+    background-image: url(https://cdn.pixabay.com/photo/2021/01/13/16/46/workout-5914643_640.jpg);
+}
+
+.parallax {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /* border-radius: 50px; */
+}
+
+nav{
+    margin: 0;
+    position: fixed;
+   top: 0;
+    width: 100%;
+    background-color: #001f4d75;
+    padding: 20px;
+}
+nav ul li{
+    display: inline;
+    padding: 20px ;
+    list-style: none;
+}
+nav ul li a{
+    color: #adceff;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: rgb(73, 152, 221);
+    cursor: pointer;
+}
+
+@media (max-width:480px){
+.box p{
+    font-size: 1.5rem;
+}
+
+}
